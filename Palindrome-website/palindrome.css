@@ -52,7 +52,7 @@ form input {
   display: inline-block;
   margin: 40px;
   position: relative;
-  left: 94px;
+  left: 17px;
   top: 40px;
   background-color: aliceblue;
   text-align: center;
@@ -67,8 +67,8 @@ button {
   display: inline-block;
   margin: 37px;
   position: relative;
-  top: 76px;
-  left: -104px;
+  top: 77px;
+  left: -44px;
   background-color: rgb(5, 155, 255);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 21px;
@@ -133,10 +133,10 @@ footer > div {
 
 @keyframes invalid-string {
   from {
-    left: 90px;
+    left: 13px;
   }
   to {
-    left: 98px;
+    left: 21px;
   }
 }
 
