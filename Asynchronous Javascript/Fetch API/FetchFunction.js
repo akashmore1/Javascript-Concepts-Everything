@@ -58,6 +58,12 @@ const apiObject = fetch("https://jsonplaceholder.typicode.com/posts") //This url
   // This is better way to catch all fetch error globally.
   .catch((error) => {
     console.log(error);
+  })
+  // Apart from then() and catch() there is finally method.
+  // This finally method is executed in all cases independant of whether promise is fulfilled or rejected.
+  .finally(() => {
+    // Mostly this method is used for functions like stopping loader spinner.
+    // This finally method works only bacause .catch() method itself returns a promise.
   });
 
 function consoleData(data) {
