@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 27px;
+}
+
+.main {
+  background-color: black;
+  background-image: url(wallpaper.jpeg);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 40px;
+  width: 160px;
+  margin: 30px 30px;
+  background-color: rgb(1, 107, 245);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+button:hover {
+  color: black;
+  background-color: rgb(105, 127, 156);
+  cursor: pointer;
+}
+
+button:active {
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: rgb(125, 34, 230);
+  opacity: 0.6;
+}
+
+.content {
+  background-color: white;
+  text-align: center;
+  color: black;
+  width: 340px;
+  height: 300px;
+  padding: 34px;
+  position: fixed;
+  margin-top: 140px;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+.js-handle {
+  visibility: hidden;
+  display: none;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 60px;
+  left: 0;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bolder;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(6px);
+  z-index: 3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cancel-button {
+  margin: 34px;
+}
