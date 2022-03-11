@@ -69,3 +69,26 @@ const apiObject = fetch("https://jsonplaceholder.typicode.com/posts") //This url
 function consoleData(data) {
   console.log(data);
 }
+
+//-------------------------------------------------------------------------------------------------------------------------//
+//************************************************ Throwing errors manually ***********************************************//
+//-------------------------------------------------------------------------------------------------------------------------//
+
+const userID = 34;
+
+const data3 = fetch(`https://reqres.in/api/users/${userID}`)
+  .then((response) => {
+    console.log(response.status);
+    // Here response.ok is not present or true, we are throwing error.
+    if (!response.ok) {
+      throw new Error("No user found");
+    }
+    return response.json();
+  })
+  .then((data) => {
+    console.log("userdata", data);
+  })
+  // Error we thrown above is catched below
+  .catch((error) => {
+    console.log("Error is " + error);
+  });
