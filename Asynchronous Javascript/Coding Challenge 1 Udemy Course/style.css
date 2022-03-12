@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  left: 54px;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+header h3 {
+  color: green;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 60px;
+  left: 58px;
+  padding: 10px;
+  background-color: green;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.lat-lng {
+  display: block;
+  margin-bottom: 10px;
+  background-color: green;
+}
+
+.form {
+  background-color: green;
+}
+
+.lattitude,
+.longitude {
+  text-align: center;
+  border: 1px solid white;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.button {
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 10px;
+  text-align: center;
+  padding-top: 1px;
+  background-color: rgb(0, 59, 253);
+}
+
+.button:hover {
+  background-color: rgb(8, 85, 153);
+}
+
+.button:active {
+  background-color: rgb(4, 55, 99);
+}
+
+.answer {
+  position: absolute;
+  top: 168px;
+  left: 58px;
+  border-radius: 10px;
+  width: 446px;
+  height: 140px;
+  background-color: green;
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
