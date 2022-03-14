@@ -61,4 +61,4 @@ const findButtonHandler = (event) => {
 
 findButton.addEventListener("click", findButtonHandler);
 
-// Furthur Work is remaining for response error handling and invalid input handling.
+// Furthur Work is remaining invalid input handling.
