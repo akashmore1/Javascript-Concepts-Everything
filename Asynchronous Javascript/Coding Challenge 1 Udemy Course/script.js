@@ -32,7 +32,11 @@ const whereAmI = (lat, lng) => {
   fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
     .then((response) => {
       console.log(response);
-      return response.json();
+      if (response.status != 200) {
+        throw new Error("Something went wrong");
+      } else {
+        return response.json();
+      }
     })
     .then((data) => {
       console.log(data);
@@ -42,6 +46,9 @@ const whereAmI = (lat, lng) => {
       answer.textContent = answerOfResponse;
       console.log(answerOfResponse);
       return data;
+    })
+    .catch((err) => {
+      answer.textContent = err;
     });
 };
 
