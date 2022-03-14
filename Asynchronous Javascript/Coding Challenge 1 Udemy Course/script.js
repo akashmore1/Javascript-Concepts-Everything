@@ -43,7 +43,7 @@ const whereAmI = (lat, lng) => {
       const nameOfCity = `${data.city}`;
       const nameOfCountry = `${data.country}`;
       const answerOfResponse = `You are in city ${nameOfCity} in country ${nameOfCountry}`;
-      answer.textContent = answerOfResponse;
+      answer.textContent = answerOfResponse; //This error is catched if request is sent before 3 sec.
       console.log(answerOfResponse);
       return data;
     })
