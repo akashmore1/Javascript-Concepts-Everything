@@ -1,7 +1,5 @@
 "use strict";
 
-console.log("Hello World!");
-
 // Coding Challenge #1
 
 /* 
