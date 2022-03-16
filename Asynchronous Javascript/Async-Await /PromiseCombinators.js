@@ -54,7 +54,7 @@ const timeout = function (sec) {
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------//
 
-// 2nd combinator is Promise.allSettled()
+// 2nd combinator is Promise.allSettled() <- modern(ES2020)
 
 /*
     Promise.allSettled() works like Promise.all().
@@ -73,3 +73,26 @@ const allSettled = Promise.allSettled([
   const allSettle = await allSettled;
   console.log("allSettled", allSettle);
 })();
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+// 3rd combinator is Promise.any() <- modern(ES2021)
+
+/*
+    Promise.any() acts like Promise.race()
+    The only difference is it will ignore all rejected promises.
+    It will return response of first resolved promise. 
+    It will only return reject if all promises in given input promise array are rejected.
+*/
+
+const any = Promise.any([
+  Promise.resolve("1st resolve"),
+  Promise.reject(new Error("rejected")),
+  Promise.resolve("2nd resolve"),
+])
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
