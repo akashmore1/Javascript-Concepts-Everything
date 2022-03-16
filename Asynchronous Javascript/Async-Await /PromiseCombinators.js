@@ -38,7 +38,7 @@ const timeout = function (sec) {
   return new Promise((_, reject) => {
     setTimeout(() => {
       reject(new Error("Request took too long"));
-    }, sec * 10);
+    }, sec * 1000);
   });
 };
 
@@ -54,4 +54,22 @@ const timeout = function (sec) {
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------//
 
-// 2nd combinator
+// 2nd combinator is Promise.allSettled()
+
+/*
+    Promise.allSettled() works like Promise.all().
+    The only difference between them is 
+    Promise.allSettled() will return array of responses even if one of the input promise is rejected.
+    Unlike Promise.all() which will short circuit the rejected promise. 
+*/
+
+const allSettled = Promise.allSettled([
+  Promise.resolve("1st resolve"),
+  Promise.reject(new Error("rejected")),
+  Promise.resolve("2nd resolve"),
+]);
+
+(async () => {
+  const allSettle = await allSettled;
+  console.log("allSettled", allSettle);
+})();
