@@ -32,7 +32,7 @@ const whereAmI = async (lat, lng) => {
   }
 };
 
-whereAmI(19.037, 72.873);
+// whereAmI(19.037, 72.873);   // Here function call id commented because 3sec api call error.
 
 // We need to understand 1 thing that whereAmI() will return a promise, so we can apply like below:
 // Below line of code will give us returned value of ahereAmI().
@@ -44,7 +44,7 @@ whereAmI(19.037, 72.873);
 
 //-----------------------------------------------------------------------------------------------//
 
-// Below function pattern is very infortant. It is called iife function.
+// Below function pattern is very important. It is called iife function.
 // We can use iffe function to apply await to return promise of whereAmI().
 
 let data;
@@ -57,4 +57,6 @@ let data;
   }
 })();
 
-console.log(data);
+setTimeout(() => {
+  console.log("outside", data);
+}, 1000);
