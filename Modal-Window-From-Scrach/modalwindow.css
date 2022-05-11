@@ -22,6 +22,9 @@
 .main {
   background-color: black;
   background-image: url(wallpaper.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
   height: 90vh;
   display: flex;
   justify-content: center;
