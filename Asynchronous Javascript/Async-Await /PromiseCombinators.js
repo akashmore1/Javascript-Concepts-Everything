@@ -1,5 +1,7 @@
 "use strict";
 
+// These combinators are for time optimization
+
 const getAirLine = async (id) => {
   try {
     const response = await fetch(
