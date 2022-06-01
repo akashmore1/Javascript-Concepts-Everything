@@ -38,3 +38,18 @@ const firstWord = airLine.slice(0, airLine.indexOf(" "));
 // to find sentence excluding last word, we use
 const notLastWord = airLine.slice(0, airLine.lastIndexOf(" "));
 console.log(firstWord, notLastWord);
+// In order to cut first and last character
+const cutFirstAndLastChar = airLine.slice(1, -1);
+console.log(cutFirstAndLastChar);
+
+const checkMiddleSit = (seatNumber) => {
+  // seats containing b and e as theit last char are middle seats
+  const s = seatNumber.slice(-1);
+  if (s === "b" || s === "e") {
+    return "Its a middle seat";
+  } else {
+    return "Its not a middle seat";
+  }
+};
+
+console.log(checkMiddleSit("12e"));
