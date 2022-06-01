@@ -32,3 +32,9 @@ const slicedString2 = airLine.slice(4, 7);
 console.log(slicedString2);
 // We can give negative values in arguments of slice method.
 // .slice(-1) here char at index of -1 is last character.
+
+// In order to find first word in sentense string we use slice and indexOf together.
+const firstWord = airLine.slice(0, airLine.indexOf(" "));
+// to find sentence excluding last word, we use
+const notLastWord = airLine.slice(0, airLine.lastIndexOf(" "));
+console.log(firstWord, notLastWord);
