@@ -53,3 +53,7 @@ const checkMiddleSit = (seatNumber) => {
 };
 
 console.log(checkMiddleSit("12e"));
+
+// We can lowercase or uppercase all string with help of:
+console.log(airLine.toLowerCase());
+console.log(airLine.toUpperCase());
