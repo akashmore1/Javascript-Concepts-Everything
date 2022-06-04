@@ -57,3 +57,11 @@ console.log(checkMiddleSit("12e"));
 // We can lowercase or uppercase all string with help of:
 console.log(airLine.toLowerCase());
 console.log(airLine.toUpperCase());
+
+// Fix capitalization in name:
+const passenger = "aKaSH";
+const passengerLower = passenger.toLowerCase();
+console.log(passengerLower);
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
