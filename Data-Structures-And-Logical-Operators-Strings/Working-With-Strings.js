@@ -65,3 +65,15 @@ console.log(passengerLower);
 const passengerCorrect =
   passengerLower[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
+
+// comparing emails
+const email = "hello@jonas.io";
+const loginEmail = "    Hello@Jonas.Io    \n ";
+const lowerEmail = loginEmail.toLowerCase();
+// To eliminate trailing and ending space we use:
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+
+// We can also write above like this:
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
