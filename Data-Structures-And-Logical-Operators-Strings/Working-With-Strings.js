@@ -77,3 +77,8 @@ console.log(trimmedEmail);
 // We can also write above like this:
 const normalizedEmail = loginEmail.toLowerCase().trim();
 console.log(normalizedEmail);
+
+// replace method
+const priceGb = "288,97$";
+const priceUs = priceGb.replace("7", "8");
+console.log(priceUs);
