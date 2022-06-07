@@ -89,3 +89,12 @@ console.log(announcement.replace("door", "gate")); // first door gets replace wi
 
 // In order to replace all occurance of door we use regular expression.
 console.log(announcement.replace(/door/g, "gate"));
+
+// Methods returning booleans:
+// includes() method
+const planeSeat = "A320neo";
+console.log(planeSeat.includes("A320"));
+
+// startsWith() method
+console.log(planeSeat.startsWith("Air")); // returns false
+console.log(planeSeat.startsWith("A320")); // returns true
