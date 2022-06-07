@@ -82,3 +82,10 @@ console.log(normalizedEmail);
 const priceGb = "288,97$";
 const priceUs = priceGb.replace("7", "8");
 console.log(priceUs);
+
+// replace method take first string which matches. replaceAll() is not a function yet.
+const announcement = "All passengers me to boarding door 23. Boarding door 23!";
+console.log(announcement.replace("door", "gate")); // first door gets replace with gate.
+
+// In order to replace all occurance of door we use regular expression.
+console.log(announcement.replace(/door/g, "gate"));
