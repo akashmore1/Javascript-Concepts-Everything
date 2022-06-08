@@ -98,3 +98,5 @@ console.log(planeSeat.includes("A320"));
 // startsWith() method
 console.log(planeSeat.startsWith("Air")); // returns false
 console.log(planeSeat.startsWith("A320")); // returns true
+
+// Arr.reverse() function used to reverse the array
