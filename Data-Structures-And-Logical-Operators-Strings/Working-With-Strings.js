@@ -103,3 +103,12 @@ console.log(planeSeat.startsWith("A320")); // returns true
 const arr = [1, 2, 3];
 const revArr = arr.reverse();
 console.log(revArr);
+
+// split method is used to split string, it returns arrays of string.
+const str = "Hi+there+I+am+Akash";
+const strArr = str.split("+");
+console.log(strArr);
+// Following is the real life scenario where we will use split mostly.
+const fullName = "Akash More";
+const [firstName, lastName] = fullName.split(" ");
+console.log(firstName, lastName);
