@@ -112,3 +112,9 @@ console.log(strArr);
 const fullName = "Akash More";
 const [firstName, lastName] = fullName.split(" ");
 console.log(firstName, lastName);
+
+// join() method works opposite of split() method.
+// It joins array into a string.
+const nameArr = ["Akash", "More"];
+const fullNameStr = nameArr.join(" "); // this will create string with space in it.  => Akash More
+const fullNameStrNoSpace = nameArr.join(""); // this will create string with no space in it  => AkashMore
