@@ -100,3 +100,6 @@ console.log(planeSeat.startsWith("Air")); // returns false
 console.log(planeSeat.startsWith("A320")); // returns true
 
 // Arr.reverse() function used to reverse the array
+const arr = [1, 2, 3];
+const revArr = arr.reverse();
+console.log(revArr);
