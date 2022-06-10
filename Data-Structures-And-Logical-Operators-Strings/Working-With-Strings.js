@@ -118,3 +118,19 @@ console.log(firstName, lastName);
 const nameArr = ["Akash", "More"];
 const fullNameStr = nameArr.join(" "); // this will create string with space in it.  => Akash More
 const fullNameStrNoSpace = nameArr.join(""); // this will create string with no space in it  => AkashMore
+
+// Write a function which takes name and returns capitalized name.
+const capitalizeName = (name) => {
+  const nameArr = name.split(" ");
+  let capitalizedName;
+  let fullNameArr;
+  for (let n of nameArr) {
+    // debugger;
+    capitalizedName = n[0].toUpperCase() + n.slice(1);
+    fullNameArr.push(capitalizedName);
+  }
+
+  return fullNameArr.join(" ");
+};
+
+console.log(capitalizeName("prateek kuhad"));
