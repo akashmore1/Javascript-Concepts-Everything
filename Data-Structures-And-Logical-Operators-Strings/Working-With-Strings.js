@@ -123,9 +123,8 @@ const fullNameStrNoSpace = nameArr.join(""); // this will create string with no 
 const capitalizeName = (name) => {
   const nameArr = name.split(" ");
   let capitalizedName;
-  let fullNameArr;
+  let fullNameArr = [];
   for (let n of nameArr) {
-    // debugger;
     capitalizedName = n[0].toUpperCase() + n.slice(1);
     fullNameArr.push(capitalizedName);
   }
