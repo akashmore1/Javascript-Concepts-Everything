@@ -133,3 +133,6 @@ const capitalizeName = (name) => {
 };
 
 console.log(capitalizeName("prateek kuhad"));
+
+// splice() method
+// splice() method makes changes in actual array.
