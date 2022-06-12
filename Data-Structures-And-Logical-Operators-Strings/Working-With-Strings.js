@@ -136,3 +136,8 @@ console.log(capitalizeName("prateek kuhad"));
 
 // splice() method
 // splice() method makes changes in actual array.
+
+// padding:
+const messege = "Go to gate 23!";
+console.log(messege.padStart(20, "*"));
+console.log(messege.padEnd(20, "*"));
