@@ -141,3 +141,7 @@ console.log(capitalizeName("prateek kuhad"));
 const messege = "Go to gate 23!";
 console.log(messege.padStart(20, "*"));
 console.log(messege.padEnd(20, "*"));
+
+// repeat() method is used to repeat string multiple times.
+const msg = "Good Morning! ";
+console.log(msg.repeat(4));
