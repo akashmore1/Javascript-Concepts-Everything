@@ -38,3 +38,6 @@ Car.prototype.country = "Japan";
 console.log(aura);
 console.log(aura.hasOwnProperty("color")); // true
 console.log(aura.hasOwnProperty("country")); // false
+
+// prototypal chaining
+// base Object doesn't have prototype.
