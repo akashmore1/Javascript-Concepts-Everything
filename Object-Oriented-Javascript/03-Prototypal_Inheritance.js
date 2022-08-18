@@ -16,3 +16,14 @@ const student = {
 // again that constructor has prototype base Object.
 // This is called as prototypal chaining.
 // base Object will not have any prototype.
+
+// We can create own method on inbuilt constructor functions.
+// This a not recommended just for fun I am including this:😁
+
+// write a function on array which can be applied to every array we use inthis project, which will return unique values in array
+Array.prototype.unique = function () {
+  return [...new Set(this)];
+};
+
+const nums = [1, 2, 3, 4, 4, 3, 6, 3, 2, 1, 8];
+console.log(nums.unique());
