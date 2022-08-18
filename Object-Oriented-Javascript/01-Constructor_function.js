@@ -11,3 +11,7 @@ const Person = function (name, id) {
 
 const p1 = new Person("Akash", "1234");
 console.log(p1);
+const p2 = "Michael";
+
+console.log(p1 instanceof Person); // return true
+console.log(p2 instanceof Person); // return false
