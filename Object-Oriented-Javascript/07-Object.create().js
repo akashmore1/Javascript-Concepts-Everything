@@ -20,3 +20,7 @@ akash.age = "23";
 
 console.log(akash);
 console.log(akash.calcAge());
+
+console.log(akash.__proto__ === Person); // true
+
+// TBH 👆This is the least used approach to create object or prototypal inheritance
