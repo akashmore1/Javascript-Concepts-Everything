@@ -14,3 +14,5 @@ class Person {
 
 // technically _movement can be used outside class.
 // It is convention used by developers to tell the variable is encapsulated.
+
+// defining method outside constructor function starting with # will result in a private field
