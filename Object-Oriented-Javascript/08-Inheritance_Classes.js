@@ -19,8 +19,15 @@ class Student extends Person {
     // Here courses is an extra attribute in class as there is alway in case of inheritance
     this.course = courses;
   }
+
+  introduce() {
+    console.log(`Hi I am ${this.name}, age ${this.age}`);
+  }
 }
 
 const akash = new Student("Akash", "23", "Computer");
 
 akash.calcBirthYear();
+akash.introduce();
+
+// If we write same method in child, it will override the parents method
