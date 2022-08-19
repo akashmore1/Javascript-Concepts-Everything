@@ -34,4 +34,10 @@ const arr_2 = [4, 5, 6];
 const nums = arr_1.concat(arr_2); //[1,2,3,4,5,6]
 console.log(nums);
 // The above concat method is same as
-const nums1 = [...arr1, ...arr2];
+const nums1 = [...arr_1, ...arr_2];
+
+// join
+// When we apply join method to array it returns a string separated by string sent as parament in join method
+const nameArr = ["A", "K", "A", "S", "H"];
+const name = nameArr.join("");
+console.log(name);
