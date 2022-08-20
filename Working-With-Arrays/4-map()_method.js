@@ -13,3 +13,14 @@ const doubleArr = arr.map(function (element, index, array) {
 });
 
 console.log(doubleArr);
+
+// Create username using array methods
+// username is initials of first, middle, last name
+const names = "Akash Kumar More";
+const userName = names
+  .toLowerCase()
+  .split(" ")
+  .map((e) => e[0])
+  .join("");
+
+console.log(userName);
