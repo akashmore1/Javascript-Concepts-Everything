@@ -20,4 +20,7 @@ const ifSquareIsPresent = arr.some(function (num) {
 const arrNest = [1, [2, 3], 4, [4, 6]];
 console.log(arrNest.flat()); // return [1,2,3,4,4,6]
 // But flat method only works on 1 level.
-// If array is deeply nested and we want above result, we use flatMap()
+// If array is deeply nested and we want above result, we wii, still get nested array in flat()
+
+// In js it is very common to use flat first and then use map function
+// flatMap() is combination of flat followed by map
