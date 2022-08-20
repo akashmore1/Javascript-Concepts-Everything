@@ -11,3 +11,5 @@ const nums = [1, 2, 3, 4, 5, 6, 7, 8];
 const greateThan4 = nums.find(function (num) {
   return num > 3;
 });
+
+// find method is used in array of objects, where we match 1 value inside object and then return whole object
